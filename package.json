@@ -1,12 +1,12 @@
 {
-  "homepage": "https://boubacar27camara.github.io/porfolio_react",
+  "homepage": "https://Boubacar27Camara.github.io/porfolio",
   "name": "porfolio_react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "predeploy": "tsc -b && vite build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
