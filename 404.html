@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/portfolio/assets/index.js"></script>
+    <script>
+      // Redirect 404s to the index page
+      if (window.location.pathname !== '/portfolio/') {
+        sessionStorage.redirect = window.location.pathname;
+      }
+      fetch(window.location.pathname)
+        .then(res => {
+          if (res.status === 404) {
+            window.location.href = '/portfolio/';
+          }
+        })
+        .catch(() => {
+          window.location.href = '/portfolio/';
+        });
+    </script>
+  </body>
+</html>
