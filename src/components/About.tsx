@@ -66,7 +66,7 @@ const About = ({darkMode}: AboutProps) => {
                             data-aos-delay="600">
                             <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-400'>3+</div>
                             <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                Annees d'Experience
+                                Annees d'Experiences
                             </div>
                         </div>
                         <div
@@ -114,7 +114,7 @@ const About = ({darkMode}: AboutProps) => {
                                     Licence 3 en Mathématiques-Informatique
                                 </h4>
                                 <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                    Université Al Aasriya, Nouakchott, Mauritanie | 2019 - 2021
+                                    Université de Alsrya, Nouakchott, Mauritanie | 2019 - 2021
                                 </p>
                             </div>
                         </div>
